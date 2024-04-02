@@ -581,4 +581,4 @@ def viewdrugs(pid,sid):
     return render_template('viewdrugs.html',res=res,p_id=p_id,s_id=s_id)
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
